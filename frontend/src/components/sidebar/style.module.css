@@ -1,0 +1,59 @@
+img {
+    filter: invert(13%) sepia(98%) saturate(0%) hue-rotate(138deg) brightness(86%) contrast(83%);
+}
+
+.sidebar {
+    background-color: #EEE;
+    color: var(--colorBlack);
+    height: 100vh;
+    width: 200px;
+    transition: all 0.5s;
+}
+
+.top_section {
+    display: flex;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.hamburger {
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0px;
+}
+
+.link {
+    display: flex;
+    color: var(--colorBlack);
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+}
+
+.link:hover {
+    background: lightskyblue;
+    color: #000;
+    transition: all 0.5s;
+}
+
+.active {
+    background-color: lightskyblue;
+    color: #000;
+}
+
+.icons {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.link_text {
+    font-size: 20px;
+}
