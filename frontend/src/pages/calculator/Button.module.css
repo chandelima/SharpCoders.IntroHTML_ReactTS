@@ -1,0 +1,36 @@
+.defaultButton, .operatorButton, .equalButton {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-width: 0;
+    border-radius: 50%;
+    margin: 10px;
+    text-align: center;
+}
+
+.defaultButton {
+    background: none;
+    color: #e5e5e5;   
+}
+
+.operatorButton {
+    background-color: #e5e5e5;
+    color: #18212a;
+}
+
+.defaultButton:hover, .operatorButton:hover {
+    background-color: #FFF;
+    color: #18212a;
+}
+
+.equalButton {
+    background-color: #ff6531;
+    color: #fff;
+}
+
+.equalButton:hover {
+    background-color: #ff8030;
+    color: #fff;
+}
