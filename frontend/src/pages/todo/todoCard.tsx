@@ -1,5 +1,6 @@
 import { Status, Todo } from "./interfaces/todo";
-import "./style.css";
+
+import styles from './Todo.module.css';
 
 interface Props {
     todo: Todo,
@@ -12,15 +13,15 @@ const TodoCard = ({todo, preUpdateTodo, changeTodoStatus, deleteTodo}: Props) =>
     const statusPendingCard = (
         <div className="todoCard">
             <p>{todo.description}</p>
-            <span className="material-symbols-rounded" 
+            <span className={styles.materialSymbolsRounded} 
               onClick={() => changeTodoStatus(todo.id, Status.Done)}>
                 done
             </span>
-            <span className="material-symbols-rounded" 
+            <span className={styles.materialSymbolsRounded} 
               onClick={() => preUpdateTodo(todo.id)}>
                 edit
             </span>
-            <span className="material-symbols-rounded" 
+            <span className={styles.materialSymbolsRounded} 
               onClick={() => deleteTodo(todo.id)}>
                 delete
             </span>

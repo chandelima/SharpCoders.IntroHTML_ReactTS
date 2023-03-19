@@ -2,7 +2,7 @@ import { ChangeEvent, useRef, useState } from 'react';
 import { Status, Todo } from './interfaces/todo';
 import TodoCard from './todoCard';
 
-import "./style.css";
+import styles from './Todo.module.css';
 
 const TodoComponent = () => {
     // Hooks:
@@ -112,14 +112,14 @@ const TodoComponent = () => {
 
     return (
         <div>
-            <header id="header">
+            <header id={styles.header}>
                 <h1>Meu incrível app de ToDo</h1>
             </header>
-            <main id="main">
-                <div id="container">
-                    <div id="form">
+            <main id={styles.main}>
+                <div id={styles.container}>
+                    <div id={styles.form}>
                         <label htmlFor="description">Descrição:</label>
-                        <div className="inputContainer">
+                        <div className={styles.inputContainer}>
                             <input onChange={handleInputChange}
                               type="text" id="description" value={inputData}
                               placeholder="Do que você quer se lembrar?" 
@@ -127,7 +127,7 @@ const TodoComponent = () => {
                             <button onClick={saveTodo}>Salvar</button>
                         </div>
                     </div>
-                    <div className="todos-list">
+                    <div className={styles.todosList}>
                         {getTodos().map((todo, i) => (
                             <TodoCard todo={todo} preUpdateTodo={preUpdateTodo}
                               changeTodoStatus={changeTodoStatus} key={i}
