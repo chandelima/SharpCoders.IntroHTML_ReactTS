@@ -4,7 +4,7 @@ import Sidebar from "./components/sidebar";
 import Home from './pages/home/index';
 import Calculator from './pages/calculator/index';
 import Todo from './pages/todo/index';
-import Stopwatch from './pages/stopwatch/stopwatch';
+import Stopwatch from './pages/stopwatch';
 
 import './App.css';
 
